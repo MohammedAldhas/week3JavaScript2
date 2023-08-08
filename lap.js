@@ -41,7 +41,7 @@ let arrObject = [
 let find = arrObject.find((value)=> value.eye_color === "blue");
 console.log(find.name);
 let mass = arrObject.find((value)=> value.mass > 50 );
-console.log(find.gender);
+console.log(mass.gender);
 
 
 //Filter
