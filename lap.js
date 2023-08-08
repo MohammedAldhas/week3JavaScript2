@@ -36,8 +36,8 @@ let arrObject = [
       },
     ];
 
-    console.log("==".repeat(20));
-//Find
+    //Find
+    console.log("==".repeat(10) + "Find" + "==".repeat(10));
 let find = arrObject.find((value)=> value.eye_color === "blue");
 console.log(find.name);
 let mass = arrObject.find((value)=> value.mass > 50 );
@@ -45,6 +45,7 @@ console.log(find.gender);
 
 
 //Filter
+console.log("==".repeat(10) + "Filter" + "==".repeat(10));
 let filtlinght = arrObject.filter((value)=> value.height < 2.0 );
 console.log(filtlinght);
 let filtmale = arrObject.filter((value)=> value.gender === "male" );
@@ -52,6 +53,8 @@ console.log(filtmale);
 
 
 //Map
+
+console.log("==".repeat(10) + "Map" + "==".repeat(10));
 let allnames = arrObject.map((value)=> value.name);
 console.log(allnames);
 let allhigt = arrObject.map((value)=> value.height);
@@ -59,18 +62,20 @@ console.log(allhigt);
 
 
 //Sort
+console.log("==".repeat(10) + "Sort" + "==".repeat(10));
 
 let sormass = arrObject.sort(function (a,b) {
-return a.mass - b.mass;
+    return a.mass - b.mass;
 });
 console.log(sormass);
 let sorhight = arrObject.sort(function (a,b) {
-return b.height - a.height;
+    return b.height - a.height;
 });
 console.log(sorhight);
 
 
 //Every
+console.log("==".repeat(10) + "Every" + "==".repeat(10));
 
 let isMass = arrObject.every((v)=> v.mass > 40);
 console.log(isMass);
@@ -79,6 +84,7 @@ console.log(ishight);
 
 
 //Some
+console.log("==".repeat(10) + "Some" + "==".repeat(10));
 
 let hasblue = arrObject.some((v)=> v.eye_color === "blue");
 console.log(hasblue);
