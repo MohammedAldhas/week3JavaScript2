@@ -79,7 +79,7 @@ console.log("==".repeat(10) + "Every" + "==".repeat(10));
 
 let isMass = arrObject.every((v)=> v.mass > 40);
 console.log(isMass);
-let ishight = arrObject.every((v)=> v.height < 200);
+let ishight = arrObject.every((v)=> v.height < 2);
 console.log(ishight);
 
 
